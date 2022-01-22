@@ -1,0 +1,101 @@
+
+ 
+body{
+    background-color: aliceblue;
+    margin:0;
+    font-family: 'Arial';
+    line-height: 2.0;
+    align-items: left;
+    box-sizing: border-box;
+}
+section{
+    width:auto;
+    height:60vh;
+    justify-content: space-around;
+}
+/*navigation bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding:0px 5% ;
+}
+.nav-bar{
+    justify-content:space-between ;
+    flex-direction:row;
+    background-color: cornflowerblue;
+    border-radius: 50px 50px;
+}.nav-bar li{
+    display:inline-block;
+    justify-content: space-between;
+    margin: 10px 10px
+}
+
+/*section titles*/
+section{
+    align-items: left;
+}
+.section-title{
+    background-color: lightslategray;
+    justify-content: flex-start;
+    width:100px;
+}
+
+/*about me section*/
+.about-me{
+    background-color: lightskyblue;
+    display: flex;
+}
+.abt-body{
+    color: gray;
+    justify-content: space-around;
+}
+
+
+/*work section*/
+.my-projects{
+    flex:wrap;
+}
+.work-portfolio{
+    display: flex;
+    flex:wrap;
+    justify-content: space-around;
+    border-color: black;
+    border: 1px;
+    flex:1;
+}.work-ex{
+    border-style: solid;
+    
+}div #surf{
+    flex:10;
+    background-image: url(images/SR.jpg)blue;
+    background-size: cover;
+    align-items: center;
+     flex:3;
+}
+#led{
+    background-image:url(images/LEDwall.jpg);
+    background-size: cover;
+}
+/*footer section containing contact me etc. */
+
+footer{
+    align-items: center;
+    height: 100px;
+    flex:wrap;
+    justify-content: end;
+    background-color: thistle;
+}footer li{
+    display: flex;
+    display:inline-block;
+    margin-top: auto;
+    margin:0px 20px;
+    position: right;
+
+    
+}
+
+
+
+

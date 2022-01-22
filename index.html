@@ -3,90 +3,108 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Professional Portfolio</title>
 </head>
-
-    <!--start of nav section-->
 <body>
-<header>
- <h1 id="name"> Edmer Valencia </h1>
- <nav >
+    <!--start of nav section-->
+<section class="header">
+<nav >
+ <h1 class="name"> Edmer Valencia </h1>
+ 
  <ul class="nav-bar">
- <li> 
-     <a href="#about-me">About Me</a></li>
- <li>
-     <a href="#work"> Work</a></li>
- <li>
-     <a href="#contact-me"> Contact Me</a></li>
- <li>
-     <a href="#resume"> Resume </a>
-     <!--make link for browser to follow!-->
-    </li>
-</ul>
+    <li> 
+        <a href="#about-me">About Me</a></li>
+    <li>
+        <a href="#work"> Work</a></li>
+    <li>
+        <a href="#contact-me"> Contact Me</a></li>
+    <li>
+        <a href="#resume"> Resume </a>
+        <!--make link for browser to follow!-->
+        </li>
+    </ul>
 </nav>
-</header>
+</section>
+
 
 <!--end of nav section-->
 
 <!--img insert-->
-<h1 class="image"> Image goes here</h1>
+<section class="my-picture" id="home">
+<h1 class="section-title image"> Image goes here</h1>
+<p class="img-content">
+    Full Stack Web Developer
+</p>
+</section>
 
 <!--"About me section"-->
-<div class="abt-me">
+<section class="about-me" id="about-me">
     <h2 class="section-title">About Me</h2>
-<div class="abt-info">    
+<div class="abt-body">    
     <p>
     Hello! , my name is Edmer Valencia or Ed for short. I'm excited for you to view my portfolio and hope we are a match! A litte fact about me is that I was born in the Philippines and moved to the US when I was 10 years old.
 
-    My greatest motivation is my family and achieving goals that I am blessed enough to have the potential to achieve. My greatest reason to be developer is to create ideas and make them come to life. As well as working towards mutual goals with a group of people.
+    My greatest motivation is my family and achieving goals that I am blessed enough to have the potential to achieve. My greatest reason to be developer is to create ideas and make them come to life. As well as working towards mutualgoals with a group of people.
  </p>
 </div>
 </div>
- 
+</section> 
+
 <!--work section-->
-<section>
+<section class="my-projects"
+id="work">
     <div>
         <h2 class="section-title">  Work </h2>
     </div>
 <!--work landing pages-->
-<div class="flexbox-container1">    
-    <div id="box-1">
-        <h3>Surf Report</h3>
-        <p>MERN Stack</p>
-    </div>
- </div>
-    <div class="flexbox-container2">
-    <div class="box-2">
+
+<div class="work-portfolio">    
+    
+<div class="work-ex" id="surf">
+    <a href="#" >  
+    <h3>Surf Report</h3>
+    <p>MERN Stack</p>
+    </a>   
+</div>
+<div class="work-ex" id="led">
+    <a href="#" >    
+    <img src="./assets/images/LW.jpg">
         <h3>LED Wall</h3>
         <p>Node/IoT</p>
-    </div>
-    <div class="box-3">
-        <h3>Calculator</h3>
-        <p>React/JavaScript/CSS</p>
-    </div>
-    <div class="box-4" >
-        <h3>Pastel Puzzles</h3>
-        <p>MERN Stack</p>
-    </div>
-    <div class="box-5">
-        <h3>Run Buddy</h3>
-        <p>HTML/CSS</p>
-    </div>
- </div>
-
+    </a>
+</div>
+<div class="work-ex" id="calculator">
+    <a href="#" >    
+    <img src="./assets/images/CC.jpg">
+    <h3>Calculator</h3>
+    <p>React/JavaScript/CSS</p>
+    </a>
+</div>
+<div class="work-ex" id="pastel-puzzles">
+<a href="#" >
+    <img src="./assets/images/PP.jpg ">
+    <h3>Pastel Puzzles</h3>
+    <p>MERN Stack</p>
+</a>
+</div>
+<div class="work-ex" id="run-buddy">
+    <a href="#" >    
+    <img src="">
+    <h3>Run Buddy</h3>
+    <p>HTML/CSS</p>
+    </a>
+</div>
+</div>
 </section>
-
 </body>
-<footer>
-<!--Contact me section-->>
-<h2 class="section-title">Contact Me</h2>
-<nav>
-<ul >
+
+<footer id="contact-me">
+<!--Contact me section-->
+<h2 class="contact-me section-title">Contact Me</h2>
     <li>(956) 372-0283</li>
-    <li>edmer_franciz@yahoo.com</li>
-    <li>GitHub</li>
-</ul>
-</nav>
+    <li><a href="">edmer_franciz@yahoo.com</a></li>
+    <li><a href="">GitHub</a> </li>
+ 
 </footer>
 </html>
