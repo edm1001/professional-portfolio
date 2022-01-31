@@ -1,17 +1,15 @@
-
- 
-body{
-    background-color: aliceblue;
+*{
     margin:0;
+    padding:0;
+}
+body{
+    background-color: #333;
     font-family: 'Arial';
-    line-height: 2.0;
     align-items: left;
     box-sizing: border-box;
 }
 section{
     width:auto;
-    height:60vh;
-    justify-content: space-around;
 }
 /*navigation bar*/
 nav {
@@ -32,70 +30,113 @@ nav {
     margin: 10px 10px
 }
 
-/*section titles*/
-section{
-    align-items: left;
-}
-.section-title{
-    background-color: lightslategray;
-    justify-content: flex-start;
-    width:100px;
+.my-picture{
+    background: url('../images/wallpaper.jpg');
+    background-size: cover;
+    color: cornflowerblue 
 }
 
-/*about me section*/
+/*section titles*/
+.section-title{
+    background-color: transparent;
+    justify-content: space-around;
+    width:100px;
+    line-height: 2;
+    padding: 20px 20px;
+    border-color: lightslategray;
+}
+
+/*about me section*/   
 .about-me{
-    background-color: lightskyblue;
+    flex:wrap;
     display: flex;
+    padding:60px;
 }
 .abt-body{
-    color: gray;
+    background-color: antiquewhite;
+    color: black;
     justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    font-size: 16px;
+    line-height: 2.0;
 }
 
 
 /*work section*/
 .my-projects{
     flex:wrap;
+    justify-content: center;
+    align-items: center;
 }
 .work-portfolio{
-    display: flex;
-    flex:wrap;
-    justify-content: space-around;
-    border-color: black;
-    border: 1px;
-    flex:1;
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 10px; 
+    justify-content: center;
+    color: darkslategrey;
+}.work-ex:hover{
+    opacity:0.5 ;
+    transition:0.25s;
 }.work-ex{
     border-style: solid;
-    
-}div #surf{
-    flex:10;
-    background-image: url(images/SR.jpg)blue;
+}#surf{
+    grid-column: span 2;
+    background: url('../images/surfReport.jpg');
     background-size: cover;
-    align-items: center;
-     flex:3;
-}
-#led{
-    background-image:url(images/LEDwall.jpg);
+}#led{
+    background-image:url('../images/LEDwall.jpg');
     background-size: cover;
+    color:antiquewhite
+}#calculator{
+    background-image:url('../images/calculator.jpg');
+    background-size: cover;
+    color:antiquewhite
+}#puzzles{
+    background-image:url('../images/puzzle.jpg');
+    background-size: cover;
+    color:indianred;
+}#run-buddy{
+    background-image:url('../images/runBuddy.jpg');
+    background-size: cover;
+    color:indianred;
 }
 /*footer section containing contact me etc. */
 
 footer{
-    align-items: center;
-    height: 100px;
-    flex:wrap;
-    justify-content: end;
-    background-color: thistle;
-}footer li{
     display: flex;
-    display:inline-block;
-    margin-top: auto;
-    margin:0px 20px;
-    position: right;
+    background-color: indianred;
+    align-items: center;
+}
+#contact-me{
+margin-right: auto;
 
+}
+footer li{
+    display:inline-block;
+    margin:0px 20px;
+    justify-content: flex-end, space-around;
     
 }
 
 
 
+/*media query*/
+@media (min-width:768px){
+    .work-portfolio{
+       grid-template-columns: 350px 350px;
+       grid-gap: 5px; 
+    }
+   }
 
+@media(max-width:375px){
+   .abt-body{
+    width:100%
+    }
+    .work-portfolio{
+        grid-template-columns: 150px 150px;
+        grid-gap: 5px; 
+    }
+   }
+ 
