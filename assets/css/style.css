@@ -85,8 +85,8 @@ nav {
     grid-column: span 2;
     background: url('../images/surfReport.jpg');
     background-size: cover;
-}#led{
-    background-image:url('../images/LEDwall.jpg');
+}#dogDash{
+    background-image:url('../images/dogDash.png');
     background-size: cover;
     color:antiquewhite
 }#calculator{
