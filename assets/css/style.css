@@ -81,9 +81,9 @@ nav {
     transition:0.25s;
 }.work-ex{
     border-style: solid;
-}#surf{
+}#travelDiary{
     grid-column: span 2;
-    background: url('../images/surfReport.jpg');
+    background: url('../images/search-view.png');
     background-size: cover;
 }#dogDash{
     background-image:url('../images/dogDash.png');
